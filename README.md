@@ -2,9 +2,19 @@
 
 The most simple static http server in go to quickly serve files out of a static directory
 
-##Build and install
+(although `cd /home/somedir && python -m SimpleHTTPServer` is pretty simple to :wink: )
 
-You'll need your GOBIN to be set.
-Just run:
+##Build and Install
 
-    go install simpleserver.go
+You'll need your `GOBIN` to be set (e.g. `export GOBIN=.`)
+
+
+To Build:
+
+    export GOPATH=`pwd`; go get github.com/codegangsta/cli
+    export GOBIN=.; go install simpleserver.go
+
+To Run:
+
+   $GOBIN/simpleserver
+   
